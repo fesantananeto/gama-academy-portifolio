@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="FSN.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8c90673169.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./src/style/index.css">
+
+    <title>Fernando S. Neto</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="./assets/images/FSN.png" alt="Logo" width="200px">
+        </div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/fernando-santana-neto-dev/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/FernandoSantanaNeto" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li><a href="mailto:santananetofernando@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li><a href="https://wa.me/5513997324825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Fernando S. Neto</h1>
+                <h5>FullStack Developer</h5>
+            </div>
+            <div id="arrow" onclick="display()">
+                <i id="animation" class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+            <div id="about">
+
+                <section>
+                    <div>
+                        <img id="ab" src="./assets/images/fernandoneto.png" alt="unip">
+                        <p>25 anos, nascido em Guarujá, litoral de São Paulo. É fascinado pelo mundo da tecnologia e
+                            apaixonado por desenvolvimento web, design gráfico e jogos eletrônicos. Gosta de músicas dos
+                            mais variados gêneros, gastronomia, esportes e cultura japonesa.</p>
+                        <p>Formado em Análise e Desenvolvimento de Sistemas pela Universidade Paulista UNIP</p>
+                        <p>Fala inglês em nível Avaçando (com Certificação Cambridge), Japonês em nível
+                            Intemerdiário, além de estudar espanhol e francês.</p>
+                            <p>Atualmente participando do
+                                bootcamp em Desenvolvimento Web da GAMA ACADEMY.</p>
+                    </div>
+                   
+                </section>
+
+
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="deixe seu contato">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>&copy Fernando S. Neto 2022</p>
+        </div>
+    </footer>
+
+    <script>
+        function display() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle('rotate');
+            var about = document.getElementById("about");
+            about.classList.toggle('active');
+           
+        }
+
+
+
+    </script>
+</body>
+
+</html>

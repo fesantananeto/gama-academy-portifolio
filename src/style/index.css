@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Libre Baskerville', serif;
+    color: #4496f3;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+body {
+    max-height: 100%;
+    background: url(../../assets/images/bg.png) no-repeat  center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
+}
+header img {
+    max-width: 200px;
+}
+header ul {
+    display: flex;
+
+}
+
+header ul li i{
+    font-size: 30px;
+}
+header ul li:hover{
+    opacity: 40%;
+    transition: 300ms ease;
+}
+#logo:hover{
+   
+   
+    opacity: 40%;
+    transition: 300ms ease;
+   
+}
+
+h1, h5 {
+    text-shadow: 3px 3px 3px #063146;
+}
+.container {
+    text-align: center;   
+}
+
+.container .name h1{
+    font-size: 60px;;
+}
+
+.container .name h5{
+    font-size: 25px;;
+}
+
+i{
+    color: rgb(134, 194, 243);
+    font-size: 20px;
+}
+#arrow{
+    cursor: pointer;
+    animation: blink 1s steps(5,start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+        
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#about {
+    display: none;
+        
+} 
+.active{
+    display: flex !important;
+    justify-content: space-around;
+    
+    
+}
+
+#animation {
+    transition: 300ms;
+}
+
+
+
+#about img{
+
+    max-width: 150px;
+    border: 3px solid #4496f3;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px 0.3px #000;
+
+
+}
+
+#about div {
+    
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#about p {
+    color: rgb(112, 204, 228);
+    max-width: 600px;
+    margin:  10px;
+    text-shadow: -1px 3px 3px rgb(10, 26, 114);;
+   
+}
+
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+.form button{
+    width: 75px;
+    padding: 5px;
+    background: linear-gradient(to right, #4e32e9 50%, #066e9e 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    font-weight: bolder;
+    color:rgb(246, 252, 252);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius:  0px 5px 5px 0px;
+    margin-left: -5px;
+
+    
+}
+
+.form button:hover{
+    background-position: left bottom;
+    
+}
+
+header ul li{
+    
+    margin: 10px;
+}
+
+
+
+
+
+.foot {
+   
+    height: 50px;
+    display: grid;
+    
+}
+.foot p {
+    margin-top: 200px;
+    margin: 0 auto;
+}
+
+@media only screen  and (max-width: 480px){
+    
+.container .name h1{
+        font-size: 30px;
+    }
+.container .name h5{
+        font-size: 18px;
+    }
+#about p{
+    max-width: 80%;
+    text-align: justify;
+}
+
+header img{
+    max-width: 100px ;
+}
+
+.form{
+    width: 100%;
+}
+}
+
